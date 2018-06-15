@@ -6,19 +6,19 @@ using POIApp.Common;
 
 namespace POIApp
 {
-    public class POIListViewAdapter : BaseAdapter<PointOfInterest>
+    public class POIListViewAdapter : BaseAdapter<Pois>
     {
         private readonly Activity context;
-        private List<PointOfInterest> poiListData;
+        private List<Pois> poiListData;
 
-        public POIListViewAdapter(Activity _context, List<PointOfInterest> _poiListData)
+        public POIListViewAdapter(Activity _context, List<Pois> _poiListData)
              : base()
         {
             this.context = _context;
             this.poiListData = _poiListData;
         }
 
-        public override PointOfInterest this[int index]
+        public override Pois this[int index]
         {
             get
             {
@@ -48,7 +48,7 @@ namespace POIApp
                 view = context.LayoutInflater.Inflate(Resource.Layout.POIListItem, null);
             }
 
-            PointOfInterest poi = this[position];
+            Pois poi = this[position];
             view.FindViewById<TextView>(Resource.Id.nameTextView).Text = poi.Name;
 
             if (string.IsNullOrEmpty(poi.Address))

@@ -10,12 +10,12 @@ namespace POIApp.Common
     {
         private const string GET_POIS = "http://private-e451d-poilist.apiary-mock.com/com.packt.poiapp/api/poi/pois";
 
-        public async Task<List<PointOfInterest>> GetPOIListAsync()
+        public async Task<PointOfInterestList> GetPOIListAsync()
         {
-            List<PointOfInterest> results;
+            PointOfInterestList result;
             try
             {
-                results = await GET_POIS.GetJsonAsync<List<PointOfInterest>>();
+                result = await GET_POIS.GetJsonAsync<PointOfInterestList>();
             }
             catch (Exception ex)
             {
@@ -24,7 +24,7 @@ namespace POIApp.Common
                 return null;
             }
 
-            return results;
+            return result;
         }
     }
 }
