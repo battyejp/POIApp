@@ -3,6 +3,7 @@ using Android.Widget;
 using Android.OS;
 using System.Collections.Generic;
 using Android.Views;
+using POIApp.Common;
 
 namespace POIApp
 {
@@ -28,26 +29,11 @@ namespace POIApp
         private async void DownloadPoisListAsync()
         {
             progressBar.Visibility = ViewStates.Visible;
-            poiListData = GetPoisListTestData();
+            poiListData = await new POIService().GetPOIListAsync();
             progressBar.Visibility = ViewStates.Gone;
 
             poiListAdapter = new POIListViewAdapter(this, poiListData);
             poiListView.Adapter = poiListAdapter;
-        }
-
-        private List<PointOfInterest> GetPoisListTestData()
-        {
-            List<PointOfInterest> listData = new List<PointOfInterest>();
-
-            for (int i = 0; i < 20; i++)
-            {
-                PointOfInterest poi = new PointOfInterest();
-                poi.Id = i;
-                poi.Name = "Name " + i;
-                poi.Address = "Address " + i;
-                listData.Add(poi);
-            }
-            return listData;
         }
     }
 }

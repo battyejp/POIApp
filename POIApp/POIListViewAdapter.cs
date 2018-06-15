@@ -2,6 +2,7 @@
 using Android.App;
 using Android.Views;
 using Android.Widget;
+using POIApp.Common;
 
 namespace POIApp
 {

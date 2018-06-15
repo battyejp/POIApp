@@ -1,7 +1,10 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POIApp", "POIApp\POIApp.csproj", "{AFFF58EE-98A3-49C1-8D77-C726F2FD04D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POIApp.Common", "POIApp.Common\POIApp.Common.csproj", "{AFAF7008-314C-4AAF-AEF8-97C7E1CCDE2B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,5 +16,15 @@ Global
 		{AFFF58EE-98A3-49C1-8D77-C726F2FD04D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFFF58EE-98A3-49C1-8D77-C726F2FD04D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFFF58EE-98A3-49C1-8D77-C726F2FD04D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFAF7008-314C-4AAF-AEF8-97C7E1CCDE2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFAF7008-314C-4AAF-AEF8-97C7E1CCDE2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFAF7008-314C-4AAF-AEF8-97C7E1CCDE2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFAF7008-314C-4AAF-AEF8-97C7E1CCDE2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B36E5B0A-8243-474B-8CED-ED150BA6E59A}
 	EndGlobalSection
 EndGlobal

@@ -1,5 +1,4 @@
-﻿using System;
-namespace POIApp
+﻿namespace POIApp.Common
 {
     public class PointOfInterest
     {
