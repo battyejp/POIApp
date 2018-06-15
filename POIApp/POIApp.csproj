@@ -93,6 +93,7 @@
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="POIListViewAdapter.cs" />
+    <Compile Include="POIDetailActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -117,6 +118,7 @@
     <AndroidResource Include="Resources\menu\POIListViewMenu.xml" />
     <AndroidResource Include="Resources\drawable\ic_new.png" />
     <AndroidResource Include="Resources\drawable\ic_refresh.png" />
+    <AndroidResource Include="Resources\layout\POIDetail.axml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\POIApp.Common\POIApp.Common.csproj">

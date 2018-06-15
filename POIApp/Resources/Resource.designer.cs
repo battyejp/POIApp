@@ -1831,11 +1831,11 @@ namespace POIApp
 			// aapt resource value: 0x7f0b0069
 			public const int action0 = 2131427433;
 			
-			// aapt resource value: 0x7f0b0082
-			public const int actionNew = 2131427458;
+			// aapt resource value: 0x7f0b008f
+			public const int actionNew = 2131427471;
 			
-			// aapt resource value: 0x7f0b0083
-			public const int actionRefresh = 2131427459;
+			// aapt resource value: 0x7f0b0090
+			public const int actionRefresh = 2131427472;
 			
 			// aapt resource value: 0x7f0b0057
 			public const int action_bar = 2131427415;
@@ -1897,8 +1897,11 @@ namespace POIApp
 			// aapt resource value: 0x7f0b0019
 			public const int add = 2131427353;
 			
-			// aapt resource value: 0x7f0b007f
-			public const int addrTextView = 2131427455;
+			// aapt resource value: 0x7f0b0080
+			public const int addrEditText = 2131427456;
+			
+			// aapt resource value: 0x7f0b008d
+			public const int addrTextView = 2131427469;
 			
 			// aapt resource value: 0x7f0b004b
 			public const int alertTitle = 2131427403;
@@ -1948,6 +1951,9 @@ namespace POIApp
 			// aapt resource value: 0x7f0b003b
 			public const int default_activity_button = 2131427387;
 			
+			// aapt resource value: 0x7f0b007e
+			public const int descrEditText = 2131427454;
+			
 			// aapt resource value: 0x7f0b0012
 			public const int disableHome = 2131427346;
 			
@@ -1993,14 +1999,17 @@ namespace POIApp
 			// aapt resource value: 0x7f0b0034
 			public const int italic = 2131427380;
 			
+			// aapt resource value: 0x7f0b0086
+			public const int latEditText = 2131427462;
+			
 			// aapt resource value: 0x7f0b0009
 			public const int line1 = 2131427337;
 			
 			// aapt resource value: 0x7f0b000a
 			public const int line3 = 2131427338;
 			
-			// aapt resource value: 0x7f0b007d
-			public const int linearLayout1 = 2131427453;
+			// aapt resource value: 0x7f0b007a
+			public const int linearLayout1 = 2131427450;
 			
 			// aapt resource value: 0x7f0b000f
 			public const int listMode = 2131427343;
@@ -2008,11 +2017,14 @@ namespace POIApp
 			// aapt resource value: 0x7f0b003c
 			public const int list_item = 2131427388;
 			
+			// aapt resource value: 0x7f0b0087
+			public const int longEditText = 2131427463;
+			
 			// aapt resource value: 0x7f0b006c
 			public const int media_actions = 2131427436;
 			
-			// aapt resource value: 0x7f0b0081
-			public const int message = 2131427457;
+			// aapt resource value: 0x7f0b008e
+			public const int message = 2131427470;
 			
 			// aapt resource value: 0x7f0b0023
 			public const int middle = 2131427363;
@@ -2020,8 +2032,11 @@ namespace POIApp
 			// aapt resource value: 0x7f0b001a
 			public const int multiply = 2131427354;
 			
-			// aapt resource value: 0x7f0b007e
-			public const int nameTextView = 2131427454;
+			// aapt resource value: 0x7f0b007c
+			public const int nameEditText = 2131427452;
+			
+			// aapt resource value: 0x7f0b008c
+			public const int nameTextView = 2131427468;
 			
 			// aapt resource value: 0x7f0b002d
 			public const int never = 2131427373;
@@ -2044,14 +2059,14 @@ namespace POIApp
 			// aapt resource value: 0x7f0b0040
 			public const int parentPanel = 2131427392;
 			
-			// aapt resource value: 0x7f0b007c
-			public const int poiImageView = 2131427452;
+			// aapt resource value: 0x7f0b008b
+			public const int poiImageView = 2131427467;
 			
-			// aapt resource value: 0x7f0b007a
-			public const int poiListView = 2131427450;
+			// aapt resource value: 0x7f0b0089
+			public const int poiListView = 2131427465;
 			
-			// aapt resource value: 0x7f0b007b
-			public const int progressBar = 2131427451;
+			// aapt resource value: 0x7f0b008a
+			public const int progressBar = 2131427466;
 			
 			// aapt resource value: 0x7f0b0005
 			public const int progress_circular = 2131427333;
@@ -2062,8 +2077,8 @@ namespace POIApp
 			// aapt resource value: 0x7f0b0050
 			public const int radio = 2131427408;
 			
-			// aapt resource value: 0x7f0b0079
-			public const int relativeLayout1 = 2131427449;
+			// aapt resource value: 0x7f0b0088
+			public const int relativeLayout1 = 2131427464;
 			
 			// aapt resource value: 0x7f0b0074
 			public const int right_icon = 2131427444;
@@ -2082,6 +2097,9 @@ namespace POIApp
 			
 			// aapt resource value: 0x7f0b0043
 			public const int scrollView = 2131427395;
+			
+			// aapt resource value: 0x7f0b0079
+			public const int scrollView1 = 2131427449;
 			
 			// aapt resource value: 0x7f0b005b
 			public const int search_badge = 2131427419;
@@ -2155,6 +2173,15 @@ namespace POIApp
 			// aapt resource value: 0x7f0b0011
 			public const int tabMode = 2131427345;
 			
+			// aapt resource value: 0x7f0b0081
+			public const int tableLayout1 = 2131427457;
+			
+			// aapt resource value: 0x7f0b0082
+			public const int tableRow2 = 2131427458;
+			
+			// aapt resource value: 0x7f0b0085
+			public const int tableRow3 = 2131427461;
+			
 			// aapt resource value: 0x7f0b000b
 			public const int tag_transition_group = 2131427339;
 			
@@ -2170,8 +2197,20 @@ namespace POIApp
 			// aapt resource value: 0x7f0b0044
 			public const int textSpacerNoTitle = 2131427396;
 			
-			// aapt resource value: 0x7f0b0080
-			public const int textView1 = 2131427456;
+			// aapt resource value: 0x7f0b007b
+			public const int textView1 = 2131427451;
+			
+			// aapt resource value: 0x7f0b0083
+			public const int textView12 = 2131427459;
+			
+			// aapt resource value: 0x7f0b0084
+			public const int textView13 = 2131427460;
+			
+			// aapt resource value: 0x7f0b007d
+			public const int textView2 = 2131427453;
+			
+			// aapt resource value: 0x7f0b007f
+			public const int textView3 = 2131427455;
 			
 			// aapt resource value: 0x7f0b0071
 			public const int time = 2131427441;
@@ -2371,25 +2410,28 @@ namespace POIApp
 			public const int notification_template_part_time = 2130968616;
 			
 			// aapt resource value: 0x7f040029
-			public const int POIList = 2130968617;
+			public const int POIDetail = 2130968617;
 			
 			// aapt resource value: 0x7f04002a
-			public const int POIListItem = 2130968618;
+			public const int POIList = 2130968618;
 			
 			// aapt resource value: 0x7f04002b
-			public const int select_dialog_item_material = 2130968619;
+			public const int POIListItem = 2130968619;
 			
 			// aapt resource value: 0x7f04002c
-			public const int select_dialog_multichoice_material = 2130968620;
+			public const int select_dialog_item_material = 2130968620;
 			
 			// aapt resource value: 0x7f04002d
-			public const int select_dialog_singlechoice_material = 2130968621;
+			public const int select_dialog_multichoice_material = 2130968621;
 			
 			// aapt resource value: 0x7f04002e
-			public const int support_simple_spinner_dropdown_item = 2130968622;
+			public const int select_dialog_singlechoice_material = 2130968622;
 			
 			// aapt resource value: 0x7f04002f
-			public const int tooltip = 2130968623;
+			public const int support_simple_spinner_dropdown_item = 2130968623;
+			
+			// aapt resource value: 0x7f040030
+			public const int tooltip = 2130968624;
 			
 			static Layout()
 			{

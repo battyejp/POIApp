@@ -6,6 +6,7 @@ using Android.Views;
 using POIApp.Common;
 using Android.Content;
 using Android.Net;
+using Newtonsoft.Json;
 
 namespace POIApp
 {
@@ -24,6 +25,8 @@ namespace POIApp
 
             SetContentView(Resource.Layout.POIList);
             poiListView = FindViewById<ListView>(Resource.Id.poiListView);
+            poiListView.ItemClick += POIClicked;
+
             progressBar = FindViewById<ProgressBar>(Resource.Id.progressBar);
 
             DownloadPoisListAsync();
@@ -58,7 +61,7 @@ namespace POIApp
             switch (item.ItemId)
             {
                 case Resource.Id.actionNew:
-                    // place holder for creating new poi
+                    StartActivity(typeof(POIDetailActivity));
                     return true;
                 case Resource.Id.actionRefresh:
                     DownloadPoisListAsync();
@@ -73,6 +76,16 @@ namespace POIApp
             var connectivityManager = (ConnectivityManager)this.GetSystemService(Context.ConnectivityService);
             var activeConnection = connectivityManager.ActiveNetworkInfo;
             return (null != activeConnection && activeConnection.IsConnected);
+        }
+
+        protected void POIClicked(object sender, ListView.ItemClickEventArgs e)
+        {
+            Pois poi = poiListData.Pois[(int)e.Id];
+
+            Intent poiDetailIntent = new Intent(this, typeof(POIDetailActivity));
+            string poiJson = JsonConvert.SerializeObject(poi);
+            poiDetailIntent.PutExtra("poi", poiJson);
+            StartActivity(poiDetailIntent);
         }
     }
 }
