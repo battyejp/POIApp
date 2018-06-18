@@ -119,6 +119,9 @@
     <AndroidResource Include="Resources\drawable\ic_new.png" />
     <AndroidResource Include="Resources\drawable\ic_refresh.png" />
     <AndroidResource Include="Resources\layout\POIDetail.axml" />
+    <AndroidResource Include="Resources\menu\POIDetailMenu.xml" />
+    <AndroidResource Include="Resources\drawable\ic_delete.png" />
+    <AndroidResource Include="Resources\drawable\ic_save.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\POIApp.Common\POIApp.Common.csproj">

@@ -28,6 +28,11 @@ namespace POIApp
             poiListView.ItemClick += POIClicked;
 
             progressBar = FindViewById<ProgressBar>(Resource.Id.progressBar);
+        }
+
+        protected override void OnResume()
+        {
+            base.OnResume();
 
             DownloadPoisListAsync();
         }
