@@ -66,8 +66,18 @@ namespace POIApp
             switch (item.ItemId)
             {
                 case Resource.Id.actionNew:
-                    Intent intent = new Intent(activity, typeof(POIDetailActivity));
-                    StartActivity(intent);
+                    if (POIListActivity.isDualMode)
+                    {
+                        var detailFragment = new POIDetailFragment();
+                        FragmentTransaction ft = FragmentManager.BeginTransaction();
+                        ft.Replace(Resource.Id.poiDetailLayout, detailFragment);
+                        ft.Commit();
+                    }
+                    else
+                    {
+                        Intent intent = new Intent(activity, typeof(POIDetailActivity));
+                        StartActivity(intent);
+                    }
                     return true;
                 case Resource.Id.actionRefresh:
                     DownloadPoisListAsync();
@@ -81,10 +91,22 @@ namespace POIApp
         {
             Pois poi = poi = poiListData.Pois[position];
 
-            Intent poiDetailIntent = new Intent(activity, typeof(POIDetailActivity));
-            string poiJson = JsonConvert.SerializeObject(poi);
-            poiDetailIntent.PutExtra("poi", poiJson);
-            StartActivity(poiDetailIntent);
+            if (POIListActivity.isDualMode)
+            {
+                var detailFragment = new POIDetailFragment();
+                detailFragment.Arguments = new Bundle();
+                detailFragment.Arguments.PutString("poi", JsonConvert.SerializeObject(poi));
+
+                FragmentTransaction ft = FragmentManager.BeginTransaction();
+                ft.Replace(Resource.Id.poiDetailLayout, detailFragment);
+                ft.Commit();
+            }
+            else
+            {
+                Intent poiDetailIntent = new Intent(activity, typeof(POIDetailActivity));
+                poiDetailIntent.PutExtra("poi", JsonConvert.SerializeObject(poi));
+                StartActivity(poiDetailIntent);
+            }
         }
 
         private async void DownloadPoisListAsync()

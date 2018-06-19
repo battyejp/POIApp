@@ -126,6 +126,7 @@
     <AndroidResource Include="Resources\drawable\ic_save.png" />
     <AndroidResource Include="Resources\layout\POIDetailFragment.axml" />
     <AndroidResource Include="Resources\layout\POIListFragment.axml" />
+    <AndroidResource Include="Resources\layout-sw600dp\POIList.axml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\POIApp.Common\POIApp.Common.csproj">

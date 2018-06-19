@@ -13,12 +13,18 @@ namespace POIApp
     [Activity(Label = "POIApp", MainLauncher = true, Icon = "@mipmap/icon")]
     public class POIListActivity : Activity
     {
+        public static bool isDualMode = false; 
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             RequestWindowFeature(WindowFeatures.ActionBar);
 
             SetContentView(Resource.Layout.POIList);
+
+            var detailsLayout = FindViewById(Resource.Id.poiDetailLayout);
+
+            isDualMode = detailsLayout != null && detailsLayout.Visibility == ViewStates.Visible;
         }
     }
 }
