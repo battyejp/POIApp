@@ -17,6 +17,7 @@ namespace POIApp
         private ProgressBar progressBar;
         private PointOfInterestList poiListData;
         private POIListViewAdapter poiListAdapter;
+        private int scrollPosition;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -37,6 +38,19 @@ namespace POIApp
             DownloadPoisListAsync();
         }
 
+        protected override void OnSaveInstanceState(Bundle outState)
+        {
+            base.OnSaveInstanceState(outState);
+            int currentPosition = poiListView.FirstVisiblePosition;
+            outState.PutInt("scroll_position", currentPosition);
+        }
+
+        protected override void OnRestoreInstanceState(Bundle savedInstanceState)
+        {
+            base.OnRestoreInstanceState(savedInstanceState);
+            scrollPosition = savedInstanceState.GetInt("scroll_position");
+        }
+
         private async void DownloadPoisListAsync()
         {
             if (!IsConnected())
@@ -52,6 +66,10 @@ namespace POIApp
 
             poiListAdapter = new POIListViewAdapter(this, poiListData.Pois);
             poiListView.Adapter = poiListAdapter;
+
+            poiListView.Post(() => {
+                poiListView.SetSelection(scrollPosition);
+            });
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)
